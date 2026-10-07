@@ -20,7 +20,7 @@ const SUGGESTED_PROMPTS = [
 
 const API_ENDPOINT = process.env.NEXT_PUBLIC_API_URL
   ? `${process.env.NEXT_PUBLIC_API_URL}/api/chat`
-  : "http://localhost:5000/api/chat";
+  : "https://xcm-chatbot.onrender.com/api/chat";
 
 export default function ChatApp() {
   const [messages, setMessages] = useState(INITIAL_MESSAGES);
