@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/src/lib/:path*',
+        destination: '/lib/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
